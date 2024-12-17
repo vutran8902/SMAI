@@ -135,6 +135,9 @@ from server import BinaryEventTypes
 import nodes
 import comfy.model_management
 
+# Import the custom node
+import custom_nodes.PythonExecutorNode
+
 def cuda_malloc_warning():
     device = comfy.model_management.get_torch_device()
     device_name = comfy.model_management.get_torch_device_name(device)
